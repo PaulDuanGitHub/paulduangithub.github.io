@@ -5,6 +5,9 @@ img.center {
     animation-duration: 5s;
     animation-name: fadein;
 }
+a { 
+    text-decoration:none;
+}
 #hr {
     animation-duration: 6s;
     animation-name: fadein;
@@ -32,13 +35,11 @@ div.content {
     margin-left: 50px;
     margin-right: 50px;
 }
-div.project{
-    width: 250px;
-    height: 350px;
-    background-color: gainsboro;
-    animation-duration: 2s;
-    animation-name: fadein;
-    margin: auto;
+
+div.project:hover{
+    animation-duration: 0.5s;
+    animation-name: shadow;
+    box-shadow:0 0 10px 10px rgba(41, 40, 40, 0.356);
 }
 img.projectImg{
     margin-left: auto;
@@ -65,5 +66,15 @@ img.projectImg{
     to {
         margin-top: 25;
         opacity: 1;
+    }
+}
+
+@keyframes shadow {
+    from {
+        box-shadow:0 0 10px 10px rgba(41, 40, 40, 0.1);
+    }
+
+    to {
+        box-shadow:0 0 10px 10px rgba(41, 40, 40, 0.356);
     }
 }
