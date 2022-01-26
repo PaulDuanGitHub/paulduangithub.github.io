@@ -1,3 +1,34 @@
+@font-face{
+    font-family: 'OpenSans'; 
+    src: url('./font/OpenSans/OpenSans-Regular.ttf');
+    src:url('./font/OpenSans/OpenSans-Bold.ttf') format('Bold'),
+        url('./font/OpenSans/OpenSans-Italic.ttf') format('Italic'),
+}
+
+.title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Consolas;
+    width: 6em;
+
+    animation-name: typing, blink-caret;
+    animation-duration: 2.2s, 0.2s;
+    animation-timing-function: steps(11, end), step-end;
+    animation-iteration-count: 1, 11;
+    overflow: hidden;
+}
+/* 打印效果 */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 6em; }
+}
+/* 光标闪啊闪 */
+@keyframes blink-caret {
+  from, to { box-shadow: 1px 0 0 0 transparent; }
+  50% { box-shadow: 1px 0 0 0; }
+}
+
 img.center { 
     display: block; 
     margin-left: auto;
