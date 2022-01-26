@@ -47,6 +47,7 @@ div.content {
     margin-left: 10;
     animation-duration: 2s;
     animation-name: slidein;
+    font-weight: bold;
 }
 #list {
     width: fit-content;
