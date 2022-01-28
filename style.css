@@ -4,6 +4,9 @@
     src:url('./font/OpenSans/OpenSans-Bold.ttf') format('Bold'),
         url('./font/OpenSans/OpenSans-Italic.ttf') format('Italic'),
 }
+.link {
+    padding: 25px;
+}
 
 .title {
     text-align: center;
@@ -18,12 +21,12 @@
     animation-iteration-count: 1, 11;
     overflow: hidden;
 }
-/* 打印效果 */
+
 @keyframes typing {
   from { width: 0; }
   to { width: 6em; }
 }
-/* 光标闪啊闪 */
+
 @keyframes blink-caret {
   from, to { box-shadow: 1px 0 0 0 transparent; }
   50% { box-shadow: 1px 0 0 0; }
@@ -96,7 +99,7 @@ img.projectImg{
     }
 
     to {
-        margin-top: 25;
+        margin-top: 0;
         opacity: 1;
     }
 }
