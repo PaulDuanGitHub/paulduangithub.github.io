@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://paulduangithub.github.io/grade-tracker/</loc>
-    <lastmod>2022-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://paulduangithub.github.io/read-music-staff/</loc>
-    <lastmod>2022-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://paulduangithub.github.io/blog/</loc>
-    <lastmod>2022-03-17</lastmod>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<url>
+  <loc>https://paulduangithub.github.io/</loc>
+  <lastmod>2022-03-17T16:04:20+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://paulduangithub.github.io/blog/</loc>
+  <lastmod>2022-01-18T03:10:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://paulduangithub.github.io/grade-tracker/</loc>
+  <lastmod>2022-01-22T23:17:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://paulduangithub.github.io/read-music-staff/</loc>
+  <lastmod>2022-02-14T19:59:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 </urlset>
