@@ -47,7 +47,6 @@ a {
     animation-name: fadein;
 }
 div.content {
-    margin-left: 10;
     animation-duration: 2s;
     animation-name: slidein;
     font-weight: bold;
@@ -65,6 +64,8 @@ div.content {
     margin-bottom: 25;
 }
 #projects{
+    text-align: left;
+    font-weight: normal;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -72,13 +73,13 @@ div.content {
 div.project:hover{
     animation-duration: 0.5s;
     animation-name: shadow;
-    box-shadow:0 0 10px 10px rgba(41, 40, 40, 0.356);
+    box-shadow:0 0 5px 5px rgba(41, 40, 40, 0.356);
 }
 img.projectImg{
     margin-left: auto;
     margin-right: auto;
-    height: 10em;
-    width:inherit;
+    height: 150px;
+    object-fit: cover;
 }
 @keyframes fadein {
     from {
@@ -104,10 +105,10 @@ img.projectImg{
 
 @keyframes shadow {
     from {
-        box-shadow:0 0 10px 10px rgba(41, 40, 40, 0.1);
+        box-shadow:0 0 5px 5px rgba(41, 40, 40, 0.1);
     }
 
     to {
-        box-shadow:0 0 10px 10px rgba(41, 40, 40, 0.356);
+        box-shadow:0 0 5px 5px rgba(41, 40, 40, 0.356);
     }
 }
