@@ -1,114 +1,219 @@
-@font-face{
-    font-family: 'OpenSans'; 
-    src: url('./font/OpenSans/OpenSans-Regular.ttf');
-    src:url('./font/OpenSans/OpenSans-Bold.ttf') format('Bold'),
-        url('./font/OpenSans/OpenSans-Italic.ttf') format('Italic'),
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.link {
-    padding: 25px;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ddd, transparent);
+    margin: 20px 0;
+}
+
+a {
+    color: #4D6BFE;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Header section */
+.title-container {
+    text-align: center;
+    margin: 20px 0;
 }
 
 .title {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Consolas;
-    width: 6em;
-
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 2.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #2c3e50;
     animation-name: typing, blink-caret;
     animation-duration: 2.2s, 0.2s;
     animation-timing-function: steps(11, end), step-end;
     animation-iteration-count: 1, 11;
-    overflow: hidden;
 }
 
+/* Intro section */
+.intro {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-links {
+    display: flex;
+    gap: 10px;
+}
+
+.intro-link {
+    font-size: 2rem;
+    color: black;
+}
+
+/* Projects section */
+.section-title {
+    margin: 30px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e9ecef;
+    color: #2c3e50;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.card-text {
+    color: #555;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.github-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.preview-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #4D6BFE;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #1a252f;
+    color: white;
+}
+
+/* Animations */
 @keyframes typing {
-  from { width: 0; }
-  to { width: 6em; }
+    from { width: 0; }
+    to { width: calc(2.2 * 11 * 0.61rem); } /* Adjusted for "D:/Xianzhao" text, 2.2 font size, 0.61rem character width */
 }
 
 @keyframes blink-caret {
-  from, to { box-shadow: 1px 0 0 0 transparent; }
-  50% { box-shadow: 1px 0 0 0; }
+    from, to { border-color: transparent; }
+    50% { border-color: #2c3e50; }
 }
 
-img.center { 
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
-    animation-duration: 5s;
-    animation-name: fadein;
-}
-a { 
-    text-decoration:none;
-}
-#hr {
-    animation-duration: 6s;
-    animation-name: fadein;
-}
-div.content {
-    animation-duration: 2s;
-    animation-name: slidein;
-    font-weight: bold;
-}
-#list {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
-}
-#aboutme{
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 25;
-}
-#projects{
-    text-align: left;
-    font-weight: normal;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-div.project:hover{
-    animation-duration: 0.5s;
-    animation-name: shadow;
-    box-shadow:0 0 5px 5px rgba(41, 40, 40, 0.356);
-}
-img.projectImg{
-    margin-left: auto;
-    margin-right: auto;
-    height: 150px;
-    object-fit: cover;
-}
-@keyframes fadein {
-    from {
-      opacity: 0;
+/* Responsive design */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
     }
-  
-    to {
-      opacity: 1;
+    
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: calc(1.8 * 11 * 0.61rem); } /* Adjusted for mobile */
     }
 }
 
-@keyframes slidein {
-    from {
-        margin-top: 50;
-        opacity: 0;
+@media (max-width: 576px) {
+    body {
+        padding: 15px;
     }
-
-    to {
-        margin-top: 0;
-        opacity: 1;
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
-}
-
-@keyframes shadow {
-    from {
-        box-shadow:0 0 5px 5px rgba(41, 40, 40, 0.1);
+    
+    .intro-links {
+        flex-direction: column;
+        gap: 12px;
     }
-
-    to {
-        box-shadow:0 0 5px 5px rgba(41, 40, 40, 0.356);
+    
+    .title {
+        font-size: 1.6rem;
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: calc(1.6 * 11 * 0.61rem); } /* Adjusted for small mobile */
     }
 }

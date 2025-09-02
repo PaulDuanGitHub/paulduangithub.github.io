@@ -1,160 +1,126 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xianzhao Duan</title>
-    <!-- <meta http-equiv="refresh" content="3;url=https://paulduangithub.github.io/blog"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel='shortcut icon' href="./img/icon.ico">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <div>
-        <!-- <img src="./img/name.png" class="center"> -->
-        <h1><div class="title">D:/Xianzhao</div></h1>
-        <hr id='hr' />
-        <!-- <div id='title' class='content'>Hello, this is Xianzhao Duan</div>
-        <div id='aboutme' class='content'>Basic Infomation:</div> -->
-        <!-- <div id='list' class='content'>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Hi, I am Xianzhao(Paul) Duan, a first year international student from China.
-                </li>
-                <li class="list-group-item">I study Computer Science at McMaster University.</li>
-                <li class="list-group-item list-group-item-success">I am looking for a remote coop job for Summer 2022.
-                </li>
-                <li class="list-group-item list-group-item-success">
-                    <a href="./resume.pdf" target="_blank">Resume</a>
-                    <a href="https://github.com/PaulDuanGitHub" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/xianzhao-duan/" target="_blank">LinkedIn</a>
-                    <a href="https://paulduangithub.github.io/blog/" target="_blank">My Blog</a>
-                </li>
-            </ul>
-        </div> -->
-        <div id='list' class='content'>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <!-- <a class="link" href="./resume.pdf" target="_blank">Resume</a> -->
-                    <a class="link" href="https://github.com/PaulDuanGitHub" target="_blank">GitHub</a>
-                    <a class="link" href="https://www.linkedin.com/in/xianzhao-duan/" target="_blank">LinkedIn</a>
-                </li>
-                <li class="list-group-item">Hi, I am Xianzhao(Paul) Duan, a third year CS student.
-                </li>
-                <li class="list-group-item">I study at McMaster University.</li>
-                <li class="list-group-item">I am looking for a Co-op opportunity for Summer 2024.
-                </li>
-            </ul>
+    <header>
+        <h1>
+            <div class="title">D:/Xianzhao</div>
+        </h1>
+        <hr>
+    </header>
+
+    <section class="intro">
+        <p>Hi there 👋, this is Xianzhao(Paul) Duan.</p>
+        <p>I am a Computer Science final year student at McMaster University.</p>
+        <div class="intro-links">
+            <a class="intro-link" href="https://github.com/PaulDuanGitHub" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="intro-link" href="https://www.linkedin.com/in/Xianzhao-Duan" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
         </div>
-        <div id="aboutme" class='content' style="background-color: rgb(250,250,250);padding-bottom: 0px">
-            <div style="margin: 5px">
-            Noticeable Projects
-            </div>
-        <div>
-            <div id='projects' class="card-deck" style="margin-top: 30px;">
-                <div class="card project">
-                    <img class="card-img-top projectImg" src="./img/shadow.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">2D RPG: Shadow of the Past</h5><a href="https://github.com/PaulDuanGitHub/2D-RPG-Shadow-of-the-Past" target="_blank"
-                        class="link-success">GitHub</a>
-                        <p class="card-text">A captivating 2D RPG Game in Unity drawing inspiration from the format of ancient Greek tragic drama for the storyline.
-                        </p>
-                    </div>
-                </div>
-                <div class="card project">
-                    <img class="card-img-top projectImg" src="./img/uts.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">UTS Interactive Game</h5><a href="https://github.com/PaulDuanGitHub/uts-interactive" target="_blank"
-                        class="link-success">GitHub</a>
-                        <p class="card-text">An Online real-time web game based on Matter.js and Socket.io.
-                        </p>
-                    </div>
-                </div>
-                <div class="card project">
-                    <img class="card-img-top projectImg" src="./img/rbc.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">RBC Reach</h5><a href="https://devpost.com/software/reach-rbc" target="_blank"
-                        class="link-success">DevPost</a>
-                        <p class="card-text">Reach RBC is a kiosk system that explains RBC's newcomer banking options, books appointments for users while displaying the closest banking options, offered in 8 different languages.
-                        </p>
-                    </div>
-                </div>
-                <div class="card project">
-                    <img class="card-img-top projectImg" src="./img/pomo.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Pomo Player</h5><a href="https://github.com/PaulDuanGitHub/pomo-player" target="_blank"
-                        class="link-success">GitHub</a>
-                        <p class="card-text">An Android MP3 player to assist individuals in practicing the Pomodoro Technique. Allows users to insert a 25-minute interval between the playback of two MP3 files.
-                        </p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Noticeable Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img class="project-img" src="./img/vislit.png" alt="2D RPG: Shadow of the Past">
+                <div class="card-body">
+                    <h3 class="card-title">Canadian Literature Visualizations</h3>
+                    <p class="card-text">Interactive data visualizations using D3.js and React to visualize Canadian
+                        literature
+                        trends, including metrics like average sentence length, readability scores, and word frequency..
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://github.com/PaulDuanGitHub/VisLit" target="_blank" class="github-link">View on
+                            GitHub</a>
+                        <a href="https://paulduangithub.github.io/VisLit" target="_blank" class="preview-link">Check it
+                            Out!</a>
                     </div>
                 </div>
             </div>
-            <div id='projects' class="card-deck" style="margin-top: 30px;">
-                <div class="card project">
-                    <img class="card-img-top projectImg" src="./img/rt.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Round Table</h5><a href="https://github.com/PaulDuanGitHub/round-table" target="_blank"
-                        class="link-success">GitHub</a>
-                        <p class="card-text">Developed a web application for small teams to conduct interactive online meeting. Utilize Blender and Three.js to implement interactable 3D representation of attendees.
-                        </p>
+
+            <div class="project-card">
+                <img class="project-img" src="./img/shadow.png" alt="2D RPG: Shadow of the Past">
+                <div class="card-body">
+                    <h3 class="card-title">2D RPG: Shadow of the Past</h3>
+                    <p class="card-text">A captivating 2D RPG Game in Unity drawing inspiration from the format of
+                        ancient Greek tragic drama for the storyline.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/PaulDuanGitHub/2D-RPG-Shadow-of-the-Past" target="_blank"
+                            class="github-link">View on GitHub</a>
+                        <a href="https://paulduangithub.github.io/2D-RPG-Shadow-of-the-Past/" target="_blank"
+                            class="preview-link">Check it Out!</a>
                     </div>
                 </div>
-                <div class="card project">
-                    <img class="card-img-top projectImg" src="./img/elm.png" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Elm Formatter</h5>
-                        <a href="https://github.com/duanxianpi/Elm-Formatter-Web" target="_blank"
-                            class="link-success">GitHub</a>
-                        <p class="card-text">Designed a website that assists classmates in formatting their final project's Elm code according to the official style guide.</p>
+            </div>
+
+            <div class="project-card">
+                <img class="project-img" src="./img/uts.png" alt="UTS Interactive Game">
+                <div class="card-body">
+                    <h3 class="card-title">UTS Interactive Game</h3>
+                    <p class="card-text">An Online real-time web game based on Matter.js and Socket.io.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/PaulDuanGitHub/uts-interactive" target="_blank"
+                            class="github-link">View on GitHub</a>
                     </div>
                 </div>
-                <div class="card project">
-                    <img class="card-img-top projectImg" src="./img/project4.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Music Training Website</h5>
-                        <a href="https://github.com/PaulDuanGitHub/read-music-staff/tree/main" target="_blank"
-                            class="link-success">GitHub</a>
-                        <p class="card-text">A website aims on practicing basic music skills like reading music notes. Based on React.js React-Bootstrap and Vexflow.</p>
+            </div>
+
+            <div class="project-card">
+                <img class="project-img" src="./img/rbc.png" alt="RBC Reach">
+                <div class="card-body">
+                    <h3 class="card-title">RBC Reach</h3>
+                    <p class="card-text">Reach RBC is a kiosk system that explains RBC's newcomer banking options, books
+                        appointments for users while displaying the closest banking options, offered in 8 different
+                        languages.</p>
+                    <div class="project-actions">
+                        <a href="https://devpost.com/software/reach-rbc" target="_blank" class="github-link">View on
+                            DevPost</a>
                     </div>
                 </div>
-                <div class="card project">
-                    <img class="card-img-top projectImg" src="./img/mv.png" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Math Visualizer</h5>
+            </div>
+
+            <div class="project-card">
+                <img class="project-img" src="./img/pomo.png" alt="Pomo Player">
+                <div class="card-body">
+                    <h3 class="card-title">Pomo Player</h3>
+
+                    <p class="card-text">An Android MP3 player to assist individuals in practicing the Pomodoro
+                        Technique. Allows users to insert a 25-minute interval between the playback of two MP3 files.
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://github.com/PaulDuanGitHub/pomo-player" target="_blank"
+                            class="github-link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img class="project-img" src="./img/mv.png" alt="Math Visualizer">
+                <div class="card-body">
+                    <h3 class="card-title">Math Visualizer</h3>
+                    <p class="card-text">A web application based on Elm. It visualize a few types of integral
+                        application question and help you with understanding calculus.</p>
+                    <div class="project-actions">
                         <a href="https://github.com/PaulDuanGitHub/MathVisualizer" target="_blank"
-                            class="link-success">GitHub</a>
-                        <p class="card-text">A web application based on Elm. It visualize a few types of integral application question and help you with understanding calculus.</p>
+                            class="github-link">View on GitHub</a>
                     </div>
-                </div>
-            </div>
-            <div id='projects' class="card-deck" style="margin-top: 30px;">
-                <div class="card project">
-                    <img class="card-img-top projectImg" src="./img/project1.png" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Grade Tracker</h5>
-                        <a href="https://github.com/PaulDuanGitHub/grade-tracker" target="_blank"
-                            class="link-success">GitHub</a>
-                        <p class="card-text">An Windows application based on Electron. It can record assignments' scores
-                            and calculate the maximum grade.</p>
-                    </div>
-                </div>
-                <div class="card project" style="visibility: hidden;">
-                </div>
-                <div class="card project" style="visibility: hidden;">
-                </div>
-                <div class="card project" style="visibility: hidden;">
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
-
+    </section>
 </body>
 
 </html>
