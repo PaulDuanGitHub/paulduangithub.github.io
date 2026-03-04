@@ -166,6 +166,10 @@ a {
     color: white;
 }
 
+.font-md {
+    font-size: 1.1rem;
+}
+
 /* Animations */
 @keyframes typing {
     from { width: 0; }
